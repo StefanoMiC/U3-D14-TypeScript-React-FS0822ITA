@@ -35,8 +35,10 @@ const FormComponent = () => {
       // per testare questo effetto fai partire l'handleSubmit compilando il form e premi il bottone blu,
       // poi premi il link per cambiare pagina alla Home con il router
       // l'intervallo è stato correttamente eliminato e non continua a produrre console log all'infinito
-      console.log("Cleared Interval");
-      clearTimeout(interval);
+      if (interval) {
+        console.log("Cleared Interval");
+        clearTimeout(interval);
+      }
     };
   }, []);
 
