@@ -1,6 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 
 const FormComponent = () => {
   const [firstName, setFirstName] = useState("");
