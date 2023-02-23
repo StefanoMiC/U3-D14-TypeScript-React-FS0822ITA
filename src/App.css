@@ -1,3 +1,8 @@
+.nav {
+  --bs-nav-link-color: #63dafb;
+  --bs-link-hover-color: #1da6cc;
+}
+
 .App {
   text-align: center;
 }

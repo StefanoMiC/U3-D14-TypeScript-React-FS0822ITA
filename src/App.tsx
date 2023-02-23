@@ -11,6 +11,7 @@ import BootstrapElements from "./components/BootstrapElements";
 import FormComponent from "./components/FormComponent";
 import Home from "./components/Home";
 import FetchComponent from "./components/FetchComponent";
+import ClassComponent from "./components/ClassComponent";
 
 function App() {
   return (
@@ -19,8 +20,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
+            path="/class"
+            element={<ClassComponent title="Nuovo titolo" subtitle="Questo è un componente a classe" />}
+          />
+          <Route
             path="/functional/:id"
-            element={<FunctionalComponent title="Nuovo titolo" subtitle="Questo è un componente a classe" />}
+            element={<FunctionalComponent title="Nuovo titolo" subtitle="Questo è un componente a funzione" />}
           />
           <Route path="/bootstrap" element={<BootstrapElements />} />
           <Route path="/form" element={<FormComponent />} />

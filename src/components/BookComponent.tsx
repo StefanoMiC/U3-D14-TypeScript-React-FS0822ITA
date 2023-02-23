@@ -8,7 +8,7 @@ interface BookComponentProps {
 
 const BookComponent = ({ book, sayHello }: BookComponentProps) => {
   return (
-    <Card>
+    <Card className="mb-4">
       <Card.Img variant="top" src={book.imageUrl} />
       <Card.Body>
         <Card.Title>{book.title}</Card.Title>
